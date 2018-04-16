@@ -1,6 +1,24 @@
 body {
-	background: #555;
-	color: white;
-	font-size: 30px;
-	
+	background: #999;
+}
+
+.active {
+	color: red;
+}
+
+li::after{
+	content: "+";
+	display: inline-block;
+	transform: rotate(45deg);
+	font-size: 1.3em;
+	color: red;
+	font-weight: bold;
+	pointer-events: all;
+	cursor: pointer;
+}
+li {
+	opacity: 1;
+	transition: opacity 1s ease;
+	height: 1em;
+	transition: height 1s ease;
 }
